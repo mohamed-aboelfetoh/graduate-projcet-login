@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+    padding: 0px;
+}
+
+.container{
+    background-color: #72C0F5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .logo {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .logo img{
+    width: 100%;
+}
+
+.container form{
+    background-color: #FFFFFF;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.container form>h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container form>div{
+    position: relative; 
+}
+
+.container form>div>label{
+    position: absolute;
+    background-color: white;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: black 1px solid;
+}
+
+form>input:last-of-type{
+    background-color: #72C0F5;
+    border-radius: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+}
+
+form>p{
+    color: black;
+    text-transform: none;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+form>p:first-of-type>a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+form>p:last-of-type>a{
+    list-style: none;
+    color: #72C0F5;
+    text-decoration: none;
+}
+
+@media (min-width:767px){
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #72C0F5;
+    display: flex;
+    flex-direction: row;
+}
+
+.container form>h2{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.container>.logo{
+    height: 100vh;
+    width: 40%;
+}
+
+.container form{
+    width: 60%;
+    border-radius: 20px 0px 0px 20px;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form>div{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.container form>[type="submit"]{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+form>p{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+}
